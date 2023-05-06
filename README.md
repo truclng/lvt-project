@@ -1,5 +1,5 @@
 # lvt-project
-Situation
+Situation: 
 Meyd.it is a digital, double-sided marketplace that connects consumers looking for tailor-made
 clothes from makers who often independently work from home and not necessarily full-time.
 Thousands of skilled tailors and designers in Sydney alone are willing to take on gig-based
@@ -12,7 +12,7 @@ The Markers can create an account for free, update their Ateliers, find and bid 
 the accepted job status, and provide delivery details for shipped items.
 The business, Meydit, would take 15% of the total cost of the job.
 
-User-Story #1
+User-Story #1: 
 As a Consumer, I want to go to a page, post a job and get notified with the quotes.
 Acceptance Criteria
 1. The consumer must be able to specify their first name, last name, phone number, and
@@ -21,7 +21,7 @@ Dress, Ethnic Wear - Sari / Blouse), upload several images representing the type
 clothing they want to get made, enter a description of their making in plain text, and
 specify a budget (optional).
 
-User Story #2
+User Story #2: 
 As a Maker, I want to list all the available jobs, filter jobs by location and types of clothing, see
 the total count of quotations for jobs, and send a quote.
 Acceptance Criteria:
@@ -31,3 +31,5 @@ making, status, count of quotations, location, etc.
 provides.
 3. The maker must be able to send a quotation, including a price and any other comments;
 the system would notify the customer by email.
+
+Website Design: https://www.figma.com/file/dMLrK7dzOAE6YD6QWWXZoG/lvt-project?type=design&node-id=0%3A1&t=uDgOoezHKjMUHRWO-1
