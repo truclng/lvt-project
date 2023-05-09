@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
+import { createTheme, ThemeProvider } from '@mui/material';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#FFFBFB'
+    },
+    secondary: {
+      main: '#545454'
+    }
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className='app-main'>
+      <img src='https://meyd.it/img/core-img/white_logo.png' alt='meyd.it logo' />
+        <div className='main-buttons'>
+          <Button variant='contained' color='primary' className='button'>Customer</Button>
+          <Button variant='contained' color='secondary' className='button'>Maker</Button>
+        </div>
+      </div>
+    </ThemeProvider>
   );
 }
 
