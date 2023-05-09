@@ -1,0 +1,6 @@
+.customer-buttons {
+	display: flex;
+	align-items: flex-start;
+	margin: 2vw;
+	gap: 1vw;
+}
