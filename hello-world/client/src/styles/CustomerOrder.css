@@ -4,3 +4,19 @@
 	margin: 2vw;
 	gap: 1vw;
 }
+
+.customer-form {
+	display: flex;
+	margin: 2vw;
+}
+
+.row-style {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1vw;
+}
+
+.table-style {
+	margin-right: 3vw;
+}
