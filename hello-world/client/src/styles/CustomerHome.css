@@ -1,0 +1,14 @@
+.req-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+.photo-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+}
