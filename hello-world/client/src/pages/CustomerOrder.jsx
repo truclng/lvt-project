@@ -94,6 +94,14 @@ const isValidEmail = (email) => {
 }
 
 export const CustomerOrder = () => {
+	const navigate = useNavigate();
+	const returnHome = () => {
+		navigate('/customer');
+	}
+	const confirmOrder = () => {
+		navigate('/customer/order/confirm'); // URL should probably have order number
+	}
+
 	const [firstName, setFirstName] = React.useState('');
 	const [lastName, setLastName] = React.useState('');
 	const [number, setNumber] = React.useState('');
@@ -118,11 +126,8 @@ export const CustomerOrder = () => {
 		console.log(`Their address is ${address}, ${suburb} ${postcode} ${state}`);
 		console.log(`Their request is ${request} for a ${clothType} with budget $AUD ${budget}`);
 		console.log(description);
-	}
 
-	const navigate = useNavigate();
-	const returnHome = () => {
-		navigate('/customer');
+		confirmOrder();
 	}
 
 	return (

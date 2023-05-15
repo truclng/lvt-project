@@ -1,0 +1,20 @@
+.confirmation-boxes {
+    display: flex;
+    gap: 5vw;
+    justify-content: flex-start;
+    margin-left: 2vw;
+}
+
+.confirm-btns {
+    display: flex;
+    gap: 1vw;
+    justify-content: flex-start;
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+
+.text-grp {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
