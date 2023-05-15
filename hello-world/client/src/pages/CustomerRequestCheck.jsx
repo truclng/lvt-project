@@ -12,6 +12,12 @@ const theme = createTheme({
 		},
 		secondary: {
 			main: '#A5A3A3'
+		},
+		statusBid: {
+			main: '#F49C5D'
+		},
+		statusMain: {
+			main: '#44A148'
 		}
 	},
 	typography: {
@@ -21,8 +27,11 @@ const theme = createTheme({
 
 const isCustomer = true;
 
+// Backend API to retrieve all bids related to request
+
 export const CustomerRequestCheck = () => {
-	const requestNumber = '#JPEG123'; // should be requested from backend later
+	const requestNumber = '#JPEG123'; // should be requested from backend 
+	const requestStatus = 'Bidding'; // should be requested from backend
 
 	return (
 		<ThemeProvider theme={theme}>
@@ -30,9 +39,11 @@ export const CustomerRequestCheck = () => {
 				<Typography variant='h4' sx={{ m: '2vw' }}>
 					{`Request Order ${requestNumber}`}
 				</Typography>
-				<Button variant='outlined' color='secondary'>Status</Button>
-				<div>
-					
+				{requestStatus === 'Bidding'
+				? <Button variant='outlined' color='statusBid'>Bidding</Button>
+				: <Button variant='outlined' color='statusMain'>Processed</Button>}
+				<div className='req-bids'>
+
 				</div>
 		</ThemeProvider>
 	);
