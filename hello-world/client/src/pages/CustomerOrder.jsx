@@ -8,6 +8,7 @@ import { MenuBar } from '../components/Menu';
 import { createTheme, MenuItem, ThemeProvider } from '@mui/material';
 import '../styles/CustomerOrder.css';
 import '../styles/Main.css';
+import { useNavigate } from 'react-router-dom';
 
 const theme = createTheme({
 	palette: {
@@ -117,6 +118,11 @@ export const CustomerOrder = () => {
 		console.log(`Their address is ${address}, ${suburb} ${postcode} ${state}`);
 		console.log(`Their request is ${request} for a ${clothType} with budget $AUD ${budget}`);
 		console.log(description);
+	}
+
+	const navigate = useNavigate();
+	const returnHome = () => {
+		navigate('/customer');
 	}
 
 	return (
@@ -332,7 +338,7 @@ export const CustomerOrder = () => {
 			</div>
 			<div className='customer-buttons'>
 				<Button variant='contained' color='primary' onClick={submitOrder}>Create Order</Button>
-				<Button variant='outlined' color='secondary'>Cancel</Button>
+				<Button variant='outlined' color='secondary' onClick={returnHome}>Return</Button>
 			</div>
 		</ThemeProvider>
 	);

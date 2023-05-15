@@ -69,6 +69,10 @@ export const CustomerHome = () => {
 		navigate('/customer/order');
 	}
 
+	const checkRequest = () => {
+		navigate('/customer/request');
+	}
+
 	return (
 		<ThemeProvider theme={theme}>
 			<MenuBar isCustomer={isCustomer} />
@@ -90,7 +94,7 @@ export const CustomerHome = () => {
 			</div>
 			<div className='req-buttons'>
 				<Button variant='contained' color='primary' onClick={makeRequest}>Make a Request</Button>
-				<Button variant='contained' color='secondary'>Check my Request</Button>
+				<Button variant='contained' color='secondary' onClick={checkRequest}>Check my Request</Button>
 			</div>
 		</ThemeProvider>
 	);
